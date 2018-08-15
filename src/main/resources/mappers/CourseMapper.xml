@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hkx.dao.CourseMapper" >
+  <resultMap id="BaseResultMap" type="com.hkx.entity.Course" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="classify" property="classify" jdbcType="VARCHAR" />
+    <result column="classify_name" property="classifyName" jdbcType="VARCHAR" />
+    <result column="sub_classify" property="subClassify" jdbcType="VARCHAR" />
+    <result column="sub_classify_name" property="subClassifyName" jdbcType="VARCHAR" />
+    <result column="username" property="username" jdbcType="VARCHAR" />
+    <result column="level" property="level" jdbcType="BIT" />
+    <result column="duration" property="duration" jdbcType="VARCHAR" />
+    <result column="study_count" property="studyCount" jdbcType="INTEGER" />
+    <result column="weight" property="weight" jdbcType="INTEGER" />
+  </resultMap>
+  <resultMap id="ResultMapWithBLOBs" type="com.hkx.entity.Course" extends="BaseResultMap" >
+    <result column="brief" property="brief" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, name, classify, classify_name, sub_classify, sub_classify_name, username, level, 
+    duration, study_count, weight
+  </sql>
+  <sql id="Blob_Column_List" >
+    brief
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="ResultMapWithBLOBs" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from t_course
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from t_course
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.hkx.entity.Course" >
+    insert into t_course (id, name, classify, 
+      classify_name, sub_classify, sub_classify_name, 
+      username, level, duration, 
+      study_count, weight, brief
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{classify,jdbcType=VARCHAR}, 
+      #{classifyName,jdbcType=VARCHAR}, #{subClassify,jdbcType=VARCHAR}, #{subClassifyName,jdbcType=VARCHAR}, 
+      #{username,jdbcType=VARCHAR}, #{level,jdbcType=BIT}, #{duration,jdbcType=VARCHAR}, 
+      #{studyCount,jdbcType=INTEGER}, #{weight,jdbcType=INTEGER}, #{brief,jdbcType=LONGVARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.hkx.entity.Course" >
+    insert into t_course
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="name != null" >
+        name,
+      </if>
+      <if test="classify != null" >
+        classify,
+      </if>
+      <if test="classifyName != null" >
+        classify_name,
+      </if>
+      <if test="subClassify != null" >
+        sub_classify,
+      </if>
+      <if test="subClassifyName != null" >
+        sub_classify_name,
+      </if>
+      <if test="username != null" >
+        username,
+      </if>
+      <if test="level != null" >
+        level,
+      </if>
+      <if test="duration != null" >
+        duration,
+      </if>
+      <if test="studyCount != null" >
+        study_count,
+      </if>
+      <if test="weight != null" >
+        weight,
+      </if>
+      <if test="brief != null" >
+        brief,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="name != null" >
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="classify != null" >
+        #{classify,jdbcType=VARCHAR},
+      </if>
+      <if test="classifyName != null" >
+        #{classifyName,jdbcType=VARCHAR},
+      </if>
+      <if test="subClassify != null" >
+        #{subClassify,jdbcType=VARCHAR},
+      </if>
+      <if test="subClassifyName != null" >
+        #{subClassifyName,jdbcType=VARCHAR},
+      </if>
+      <if test="username != null" >
+        #{username,jdbcType=VARCHAR},
+      </if>
+      <if test="level != null" >
+        #{level,jdbcType=BIT},
+      </if>
+      <if test="duration != null" >
+        #{duration,jdbcType=VARCHAR},
+      </if>
+      <if test="studyCount != null" >
+        #{studyCount,jdbcType=INTEGER},
+      </if>
+      <if test="weight != null" >
+        #{weight,jdbcType=INTEGER},
+      </if>
+      <if test="brief != null" >
+        #{brief,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.hkx.entity.Course" >
+    update t_course
+    <set >
+      <if test="name != null" >
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="classify != null" >
+        classify = #{classify,jdbcType=VARCHAR},
+      </if>
+      <if test="classifyName != null" >
+        classify_name = #{classifyName,jdbcType=VARCHAR},
+      </if>
+      <if test="subClassify != null" >
+        sub_classify = #{subClassify,jdbcType=VARCHAR},
+      </if>
+      <if test="subClassifyName != null" >
+        sub_classify_name = #{subClassifyName,jdbcType=VARCHAR},
+      </if>
+      <if test="username != null" >
+        username = #{username,jdbcType=VARCHAR},
+      </if>
+      <if test="level != null" >
+        level = #{level,jdbcType=BIT},
+      </if>
+      <if test="duration != null" >
+        duration = #{duration,jdbcType=VARCHAR},
+      </if>
+      <if test="studyCount != null" >
+        study_count = #{studyCount,jdbcType=INTEGER},
+      </if>
+      <if test="weight != null" >
+        weight = #{weight,jdbcType=INTEGER},
+      </if>
+      <if test="brief != null" >
+        brief = #{brief,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.hkx.entity.Course" >
+    update t_course
+    set name = #{name,jdbcType=VARCHAR},
+      classify = #{classify,jdbcType=VARCHAR},
+      classify_name = #{classifyName,jdbcType=VARCHAR},
+      sub_classify = #{subClassify,jdbcType=VARCHAR},
+      sub_classify_name = #{subClassifyName,jdbcType=VARCHAR},
+      username = #{username,jdbcType=VARCHAR},
+      level = #{level,jdbcType=BIT},
+      duration = #{duration,jdbcType=VARCHAR},
+      study_count = #{studyCount,jdbcType=INTEGER},
+      weight = #{weight,jdbcType=INTEGER},
+      brief = #{brief,jdbcType=LONGVARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.hkx.entity.Course" >
+    update t_course
+    set name = #{name,jdbcType=VARCHAR},
+      classify = #{classify,jdbcType=VARCHAR},
+      classify_name = #{classifyName,jdbcType=VARCHAR},
+      sub_classify = #{subClassify,jdbcType=VARCHAR},
+      sub_classify_name = #{subClassifyName,jdbcType=VARCHAR},
+      username = #{username,jdbcType=VARCHAR},
+      level = #{level,jdbcType=BIT},
+      duration = #{duration,jdbcType=VARCHAR},
+      study_count = #{studyCount,jdbcType=INTEGER},
+      weight = #{weight,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>
