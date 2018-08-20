@@ -23,15 +23,15 @@
         <sqlMapGenerator targetPackage="mappers" targetProject="./src/main/resources">
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.hkx.dao" targetProject="./src/main/java">
+        <!--<javaClientGenerator type="XMLMAPPER" targetPackage="com.hkx.dao" targetProject="./src/main/java">
             <property name="enableSubPackages" value="true"/>
-        </javaClientGenerator>
+        </javaClientGenerator>-->
         <table tableName="t_user" domainObjectName="UserInfo"
                enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
                enableSelectByExample="false" selectByExampleQueryId="false" >
             <property name="useActualColumnNames" value="false"/>
         </table>
-        <table tableName="t_course" domainObjectName="Course"
+       <!-- <table tableName="t_course" domainObjectName="Course"
                enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
                enableSelectByExample="false" selectByExampleQueryId="false" >
             <property name="useActualColumnNames" value="false"/>
@@ -70,6 +70,6 @@
                enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
                enableSelectByExample="false" selectByExampleQueryId="false" >
             <property name="useActualColumnNames" value="false"/>
-        </table>
+        </table>-->
     </context>
 </generatorConfiguration>

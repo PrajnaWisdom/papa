@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="utf-8">
+	<head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<title>在线网校学习平台</title>
+		<link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+		<link href="../css/reset.css" rel="stylesheet" type="text/css"/>
+		<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.form.js" ></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../js/oc.min.js" ></script>
+		<link rel="icon" type="image/png" href="../img/ico.png" />
+			<script>
+				$(function(){
+					$("#header").load("/app/header.html");
+					$("#foot").load("/app/footer.html");
+				})
+			</script>
+	</head>
+
+	<body background="../img/rebc.gif">
+		<div id="header"></div>
+		<div class="f-main">
+			<!-- 轮播 分类-start -->
+			<div class="clearfix">
+				<div class=main-category>
+					
+					<!-- 轮播区-start -->
+					<div class="main-bg">
+						<a href="">
+							<div class="main-bg-item"  style='background-image: url(img/c1.jpg); '></div>
+						</a>
+						<a href="">
+							<div class="main-bg-item"  style='background-image: url(img/c2.png); '></div>
+						</a>
+						<a href="">
+							<div class="main-bg-item"  style='background-image: url(img/c3.jpg); '></div>
+						</a>
+						<a href="">
+							<div class="main-bg-item"  style='background-image: url(img/c4.jpg); '></div>
+						</a>
+						<a href="">
+							<div class="main-bg-item"  style='background-image: url(img/c5.jpg); '></div>
+						</a>
+					</div>
+					<div class="f-nav-box">
+						<div class="bg-nav">
+								<a class="cur"></a> 
+							<!--	<#else>-->
+								<a></a> <a></a><a></a><a></a>
+						</div>
+					</div>
+					<!-- 轮播区-end -->
+					
+					<!-- 分类区-start -->
+					<!-- 一级分类 -->
+					<div class="main-category-menu">
+						<div class="category" c-id="a">
+							<a href="/course/list.html"><div class="group">数据开发 </div></a>
+						</div>
+						<div class="category" c-id="b">
+							<a href="/course/list.html"><div class="group">数据开发 </div></a>
+						</div>
+						<div class="category" c-id="c">
+							<a href="/course/list.html"><div class="group">数据开发 </div></a>
+						</div>
+						<div class="category" c-id="d">
+							<a href="/course/list.html"><div class="group">数据开发 </div></a>
+						</div>
+						<div class="category" c-id="e">
+							<a href="/course/list.html"><div class="group">数据开发 </div></a>
+						</div>
+						<div class="category" c-id="f">
+							<a href="/course/list.html"><div class="group">数据开发 </div></a>
+						</div>
+					</div>
+					
+					<!-- 二级分类 -->
+					<div class="main-category-submenu-content"  id="a" >
+						<div class="clearfix" >
+							<div class="submenu-title clearfix">分类目录</div>
+								<a class="submenu-item" href="../course/list.html">大数据</a>
+								<a class="submenu-item">/</a>
+						</div>
+						
+						<div class="clearfix" >
+							<div class="submenu-title" style="margin-top: 30px;">课程推荐</div>
+							<div>
+								<a href="" class="mt-10" title="${item.name!}">
+									<li class="ellipsis oc-color-hover">➤ ${item.name!}</li>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- 分类区-end -->
+					
+				</div>
+			</div>
+			<!-- 轮播 分类-end -->
+			
+			<!-- 实战推荐-start -->
+			<div class="types-block clearfix">
+				<h3 class="types-title">实战推荐</h3>
+				<div class="types-content">
+					<!--<#if actionCourseList?? && actionCourseList?size gt 0>
+					<#list actionCourseList as item>
+					<#assign n = item_index + 1 />-->
+					<a href="" target="_black">
+						<div class="course-card-container">
+							<!--<#if n %5 == 0>-->
+							<div class="course-card-top green-bg">
+							<!--<#elseif n %4 == 0>-->
+							<!--<div class="course-card-top pink-bg">-->
+							<!--<#elseif n %3 == 0>-->
+							<!--<div class="course-card-top purple-bg">-->
+							<!--<#elseif n %2 == 0>-->
+							<!--<div class="course-card-top gray-bg">-->
+							<!--<#else>-->
+							<!--<div class="course-card-top brown-bg">-->
+							<!--</#if>-->
+								<span>${item.subClassifyName!}</span>
+							</div>
+							
+							<div class="course-card-content">
+								<h3 class="course-card-name"  title="${item.name!}">${item.name!}</h3>
+								<p class="course-card-brief" title="${item.brief!}">${item.brief!}</p>
+								<div class="course-card-bottom">
+									<div class="course-card-info">${item.studyCount!}人在学</div>
+									<div class="course-card-price">￥${item.price!}</div>
+								</div>
+							</div>
+						</div>
+					</a>
+					<!--</#list>
+					</#if>-->
+				</div>
+			</div>
+			<!-- 实战推荐-end -->
+						
+			<!-- 免费好课-start -->
+			<div class="types-block clearfix">
+				<h3 class="types-title">免费好课</h3>
+				<div class="types-content">
+					<a href="" target="_black">
+						<div class="course-card-container"  >
+							<div class="course-card-top green-bg">
+							<!--<#elseif n %4 == 0>-->
+							<!--<div class="course-card-top pink-bg">-->
+							<!--<#elseif n %3 == 0>-->
+							<!--<div class="course-card-top purple-bg">-->
+							<!--<#elseif n %2 == 0>-->
+							<!--<div class="course-card-top gray-bg">-->
+							<!--<#else>-->
+							<!--<div class="course-card-top brown-bg">-->
+							<!--</#if>-->
+								<span>${item.subClassifyName!}</span>
+							</div>
+							
+							<div class="course-card-content">
+								<h3 class="course-card-name"  title="${item.name!}">${item.name!}</h3>
+								<p class="course-card-brief" title="${item.brief!}">${item.brief!}</p>
+								<div class="course-card-bottom">
+									<div class="course-card-info">
+									<!--<#if item.level == 1>
+									初级
+									<#elseif item.level == 2>
+									中级
+									<#else>
+									高级
+									</#if>-->
+									初级
+									<span>·</span>${item.studyCount!}人在学
+									</div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<!-- 免费好课-end -->
+			
+			<!-- Java课程-start -->
+			<div class="types-block clearfix">
+				<h3 class="types-title">Java开发工程师</h3>
+				<a href="" target="_black">
+				<div class="types-content-left "
+					style="background-image: url(http://img.mukewang.com/58ac18fd00012a4202240348.jpg);">
+					<div class="course-card-container-fix">
+						<div class="course-card-content">
+							<h3 class="course-card-name" title="${javaC0.name!}">${javaC0.name!}</h3>
+							<p class="color-fff" title="${javaC0.brief!}">${javaC0.brief!}</p>
+							<div class="course-card-bottom" style="margin-top: 50px;">
+								<div class="course-card-info color-fff">了解详情 →</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				</a>
+				
+				<div class="types-content-right ">
+					<div class="types-content-banner ">
+						<a href="" target="_black" title="${javaC1.name!}">
+							<div class="types-content-banner-block green-bg"  style="margin-right:20px;" >
+								${javaC1.name!}
+							</div>
+						</a>
+						<a href="" target="_black"  title="${javaC2.name!}">
+							<div class="types-content-banner-block gray-bg"  >
+								${javaC2.name!}
+							</div>
+						</a>
+					</div>
+					<div class="clearfix">
+							<a href="${s.base}/course/learn/${item.id}.html" target="_black" >
+								<div class="course-card-container">
+									<div class="course-card-top green-bg">
+										<span>${item.subClassifyName!}</span>
+									</div>
+		
+									<div class="course-card-content">
+										<h3 class="course-card-name" title="${item.name!}">${item.name!}</h3>
+										<p  class="course-card-brief" title="${item.brief!}">${item.brief!}</p>
+										<div class="course-card-bottom">
+											<!--<#if item.free == 1>-->
+											<div class="course-card-info">
+											<!--<#if item.level == 1>
+											初级
+											<#elseif item.level == 2>
+											中级
+											<#else>
+											高级
+											</#if>-->
+											初级
+											<span>·</span>${item.studyCount!}人在学
+											</div>
+											<!--<#else>-->
+											<div class="course-card-info">${item.studyCount!}人在学</div>
+											<div class="course-card-price">￥${item.price!}</div>
+											<!--</#if>-->
+										</div>
+									</div>
+								</div>
+							</a> 
+					</div>
+				</div>
+			</div>
+			<!-- Java课程-end -->
+			
+			<!--名校讲师-start -->
+			<div class="types-block clearfix">
+				<h3 class="types-title">名校讲师</h3>
+				<div class="lecturer-card-container">
+					<div class="lecturer-item">
+						<img class="lecturer-uimg" src="img/header.jpg">
+						<!--</#if>-->
+						<span class="lecturer-name">${item.realname!}</span>
+						<span class="lecturer-title">${item.collegeName!} · ${item.education!}</span>
+						<span class="lecturer-p" >${item.title!}，${item.sign!}</span>
+					</div>
+				</div>
+				<!--</#list>
+				</#if>-->
+			</div>
+			<!--名校讲师-end -->
+		</div>
+		<div id="foot"></div>
+	</body>
+	
+	<script type="text/javascript">
+	
+	$(function(){
+		//轮播效果 -start
+		var index = 0;
+		var timer = 4000;
+		$('.bg-nav a').click(function(){
+			index = $('.bg-nav a').index($(this));
+			rollBg(index);
+		});
+		$('.index-roll-item').click(function(){
+			index = $('.index-roll-item').index($(this));
+			rollBg(index);
+		});
+		var rollBg = function(i){
+			$('.main-bg-item').fadeOut(1000);
+			$($('.main-bg-item')[i]).fadeIn(1000);
+			$('.bg-nav a').removeClass('cur');
+			$($('.bg-nav a')[i]).addClass('cur');
+			$('.index-roll-item').removeClass('cur');
+			$($('.index-roll-item')[i]).addClass('cur');
+		}
+		setInterval(function(){
+			index += 1;
+			index = index%3;
+			rollBg(index);
+		}, timer);
+		//轮播效果 -end
+		
+		//课程分类展示-start
+		$(".category").popover({
+            trigger:'manual',
+            placement : 'right',
+            html: 'true',
+            content : '',
+            animation: false
+        }).on("mouseenter", function () {
+            var cid = $(this).attr('c-id');
+            $('#' + cid).show();
+            $('#' + cid).hover(function(){
+            	$('#' + cid).show();
+            },function(){
+            	$('#' + cid).hide();
+			});
+        }).on("mouseleave", function () {
+            var cid = $(this).attr('c-id');
+            $('#' + cid).hide();
+        });
+		//课程分类展示-end
+		
+	});
+	</script>
+	
+</html>

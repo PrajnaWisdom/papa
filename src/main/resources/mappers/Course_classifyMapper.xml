@@ -10,6 +10,11 @@
   <sql id="Base_Column_List" >
     id, name, code, parent_code
   </sql>
+  <select id="getAllCourseClassify" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+      from t_course_classify
+  </select>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
     select 
     <include refid="Base_Column_List" />

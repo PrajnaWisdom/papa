@@ -1,0 +1,38 @@
+<img id="userNavHeader" class="setting-header" src='../img/header.jpg'></img>
+	<div>陌上</div>
+<div class="split-line" style="margin-bottom: 20px;"></div>
+<ul class="user-menu-nav-block">
+	<a href="/home">
+		<li id="home" class="user-menu-nav">主页 <span>&gt;</span></li>
+	</a>
+	<a href="/course">
+		<li class="user-menu-nav" >我的课程  <span>&gt;</span></li>
+	</a>
+	<a href="/collect">
+		<li class="user-menu-nav">我的收藏  <span>&gt;</span></li>
+	</a>
+	<a href="/info">
+		<li class="user-menu-nav">个人信息  <span>&gt;</span></li>
+	</a>
+	<a href="/passwd">
+		<li class="user-menu-nav">修改密码  <span>&gt;</span></li>
+	</a>
+	<a href="qa.html">
+		<li class="user-menu-nav">答疑  <span>&gt;</span></li>
+	</a>
+</ul>
+<script type="text/javascript">
+	$(function(){
+		$('.user-menu-nav').hover(function(){
+			$(this).find('span').css('color','#0089D2');
+		},function(){
+			$(this).find('span').css('color','#777');
+		});
+		
+		var headPhoto = $('#userNavHeader').attr('src');
+		if(headPhoto == null || headPhoto == '' || headPhoto == 'null'){
+			var headPhoto = "../img/header.jpg";
+			$('#userNavHeader').attr('src',headPhoto);
+		}
+	});	
+</script>

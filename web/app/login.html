@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="utf-8">
+	<head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<title>网校在线学习平台</title>
+		<link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+		<link href="../css/reset.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="../css/user.css" type="text/css" />
+		<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.form.js" ></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../js/oc.min.js" ></script>
+        <script type="text/javascript" src="../js/login.js"></script>
+		<link rel="icon" type="image/png" href="img/ico.png" />
+        <style>
+            .myform{
+                text-align: center;
+                box-shadow:0 4px 8px 0 rgba(7, 17, 27, .1);
+                width: 600px;
+                margin:0 auto;
+                padding:20px;
+                background-color: #fff;
+            }
+        </style>
+			<script>
+                window.addEventListener('load',function(){
+
+                    //code是后台传入的验证字符串
+                    var code = "abcdsjdj123",
+                        codeFn = new moveCode(code);
+                });
+				$(function(){
+					$("#header").load("app/header.html")
+					$("#foot").load("app/footer.html");
+				})
+                function doAjaxLogin(){
+                    var username = $('#usernameHeader1').val();
+                    var password = $('#passwordHeader1').val();
+
+                    //验证用户名
+
+                    //验证码不能为空
+
+                    //登录
+                    $('#loginForm').ajaxSubmit({
+                        datatype : 'json',
+                        success : function(respText) {
+                            if (respText == true) {
+                                window.location.href="/index";
+                            } else{
+                                $('#loginError').show();
+                                $('#loginError').html("用户名或密码错误");
+                            }
+                        },
+                        error : function(xhr) {
+                        }
+                    });
+                }
+            </script>
+	</head>
+
+	<body background="../img/rebc.gif">
+		<div id="header"></div>
+		<div class="f-main">
+			<div class="types-block clearfix" style="text-align: center;">
+				<span class="types-title">登录</span>
+				<form class="oc-form myform" id="loginForm"  method="post" action="/dologin">
+						<!--<li>请用：wangyangming/11111 登录</li>-->
+						<li class="form-group"><label >用户名</label>
+							<input name="username"  type="text"  class=" input-text form-control"  placeholder="请输入用户名" >
+						</li>
+						<li class="form-group"><label>密码</label>
+							<input id="password" name="password" type="password" class=" input-text form-control" placeholder="请输入密码" autocomplete="off" />
+						</li>
+						<li class="input-group"><label>请滑动验证</label>
+                            <div class="input-text">
+                                <div class="code-box" id="code-box">
+                                    <input type="text" name="code" class="code-input" />
+                                    <p></p>
+                                    <span>>>></span>
+                                </div>
+                            </div>
+						</li>
+						<li>
+							<label style="background-color:#FFF;"></label> 
+                           	<input type="checkbox" value="1" id="checkbox1" name="rememberMe" style="float: left;">
+                           	<span class="text"  style="float: left;margin-left:2px;">下次自动登录</span>
+                      	</li>
+						
+						<!--<#if errcode ?? && errcode == 1>
+						<li style="text-align: left;">
+							<label style="background-color:#FFF;"></label>
+							<span style="color:red;">请输入正确的验证码</span>
+						</li>
+						</#if>
+						<#if errcode ?? && errcode == 2>
+						<li style="text-align: left;">
+							<label style="background-color:#FFF;"></label>
+							<span style="color:red;">用户名密码错</span>
+						</li>
+						</#if>
+						-->
+						<li class="clearfix" style="margin-top: 20px;">
+							<input type="button" value="登录" class="btn"style="margin-right:20px;" onclick="doAjaxLogin();">
+							<div class="btn" onclick="window.location.href='/register'">注册</div>
+						</li>
+					</form>
+			</div>
+		</div>
+		<div id="foot"></div>
+	</body>
+</html>
