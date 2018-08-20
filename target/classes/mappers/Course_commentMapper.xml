@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hkx.dao.Course_commentMapper" >
+  <resultMap id="BaseResultMap" type="com.hkx.entity.Course_comment" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="username" property="username" jdbcType="VARCHAR" />
+    <result column="to_username" property="toUsername" jdbcType="VARCHAR" />
+    <result column="course_id" property="courseId" jdbcType="INTEGER" />
+    <result column="section_id" property="sectionId" jdbcType="INTEGER" />
+    <result column="section_title" property="sectionTitle" jdbcType="VARCHAR" />
+    <result column="content" property="content" jdbcType="VARCHAR" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, username, to_username, course_id, section_id, section_title, content, create_time
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from t_course_comment
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from t_course_comment
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.hkx.entity.Course_comment" >
+    insert into t_course_comment (id, username, to_username, 
+      course_id, section_id, section_title, 
+      content, create_time)
+    values (#{id,jdbcType=INTEGER}, #{username,jdbcType=VARCHAR}, #{toUsername,jdbcType=VARCHAR}, 
+      #{courseId,jdbcType=INTEGER}, #{sectionId,jdbcType=INTEGER}, #{sectionTitle,jdbcType=VARCHAR}, 
+      #{content,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.hkx.entity.Course_comment" >
+    insert into t_course_comment
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="username != null" >
+        username,
+      </if>
+      <if test="toUsername != null" >
+        to_username,
+      </if>
+      <if test="courseId != null" >
+        course_id,
+      </if>
+      <if test="sectionId != null" >
+        section_id,
+      </if>
+      <if test="sectionTitle != null" >
+        section_title,
+      </if>
+      <if test="content != null" >
+        content,
+      </if>
+      <if test="createTime != null" >
+        create_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="username != null" >
+        #{username,jdbcType=VARCHAR},
+      </if>
+      <if test="toUsername != null" >
+        #{toUsername,jdbcType=VARCHAR},
+      </if>
+      <if test="courseId != null" >
+        #{courseId,jdbcType=INTEGER},
+      </if>
+      <if test="sectionId != null" >
+        #{sectionId,jdbcType=INTEGER},
+      </if>
+      <if test="sectionTitle != null" >
+        #{sectionTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="content != null" >
+        #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.hkx.entity.Course_comment" >
+    update t_course_comment
+    <set >
+      <if test="username != null" >
+        username = #{username,jdbcType=VARCHAR},
+      </if>
+      <if test="toUsername != null" >
+        to_username = #{toUsername,jdbcType=VARCHAR},
+      </if>
+      <if test="courseId != null" >
+        course_id = #{courseId,jdbcType=INTEGER},
+      </if>
+      <if test="sectionId != null" >
+        section_id = #{sectionId,jdbcType=INTEGER},
+      </if>
+      <if test="sectionTitle != null" >
+        section_title = #{sectionTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="content != null" >
+        content = #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.hkx.entity.Course_comment" >
+    update t_course_comment
+    set username = #{username,jdbcType=VARCHAR},
+      to_username = #{toUsername,jdbcType=VARCHAR},
+      course_id = #{courseId,jdbcType=INTEGER},
+      section_id = #{sectionId,jdbcType=INTEGER},
+      section_title = #{sectionTitle,jdbcType=VARCHAR},
+      content = #{content,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

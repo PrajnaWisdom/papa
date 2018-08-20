@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <classPathEntry location="D:\mavenrepository\mysql\mysql-connector-java\5.1.38\mysql-connector-java-5.1.38.jar" />
+    <context id="sqlserverTables" targetRuntime="MyBatis3">
+        <plugin type="org.mybatis.generator.plugins.SerializablePlugin"></plugin>
+        <commentGenerator>
+            <property name="suppressAllComments" value="true"></property>
+        </commentGenerator>
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/papa"
+                        userId="root"
+                        password="xiaohouzi">
+        </jdbcConnection>
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false" />
+        </javaTypeResolver>
+        <javaModelGenerator targetPackage="com.hkx.entity" targetProject="./src/main/java">
+            <property name="enableSubPackages" value="true"/>
+            <property name="trimStrings" value="true" />
+        </javaModelGenerator>
+        <sqlMapGenerator targetPackage="mappers" targetProject="./src/main/resources">
+            <property name="enableSubPackages" value="true"/>
+        </sqlMapGenerator>
+        <!--<javaClientGenerator type="XMLMAPPER" targetPackage="com.hkx.dao" targetProject="./src/main/java">
+            <property name="enableSubPackages" value="true"/>
+        </javaClientGenerator>-->
+        <table tableName="t_user" domainObjectName="UserInfo"
+               enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
+               enableSelectByExample="false" selectByExampleQueryId="false" >
+            <property name="useActualColumnNames" value="false"/>
+        </table>
+       <!-- <table tableName="t_course" domainObjectName="Course"
+               enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
+               enableSelectByExample="false" selectByExampleQueryId="false" >
+            <property name="useActualColumnNames" value="false"/>
+        </table>
+        <table tableName="t_course_classify" domainObjectName="Course_classify"
+               enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
+               enableSelectByExample="false" selectByExampleQueryId="false" >
+            <property name="useActualColumnNames" value="false"/>
+        </table>
+        <table tableName="t_course_comment" domainObjectName="Course_comment"
+               enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
+               enableSelectByExample="false" selectByExampleQueryId="false" >
+            <property name="useActualColumnNames" value="false"/>
+        </table>
+        <table tableName="t_course_section" domainObjectName="Course_section"
+               enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
+               enableSelectByExample="false" selectByExampleQueryId="false" >
+            <property name="useActualColumnNames" value="false"/>
+        </table>
+        <table tableName="t_site_carousel" domainObjectName="Site_carousel"
+               enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
+               enableSelectByExample="false" selectByExampleQueryId="false" >
+            <property name="useActualColumnNames" value="false"/>
+        </table>
+        <table tableName="t_user_collections" domainObjectName="User_collections"
+               enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
+               enableSelectByExample="false" selectByExampleQueryId="false" >
+            <property name="useActualColumnNames" value="false"/>
+        </table>
+        <table tableName="t_user_course_section" domainObjectName="User_course_section"
+               enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
+               enableSelectByExample="false" selectByExampleQueryId="false" >
+            <property name="useActualColumnNames" value="false"/>
+        </table>
+        <table tableName="t_user_follows" domainObjectName="User_follows"
+               enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
+               enableSelectByExample="false" selectByExampleQueryId="false" >
+            <property name="useActualColumnNames" value="false"/>
+        </table>-->
+    </context>
+</generatorConfiguration>

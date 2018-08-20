@@ -1,0 +1,1218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="papa:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="673083d9-37b4-4ecc-b24e-43bb6cecb963" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/classes/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/classes/com/hkx/controller/CodeController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/classes/com/hkx/controller/LogingController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/classes/com/hkx/controller/UrlController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/classes/com/hkx/dao/CourseMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/classes/com/hkx/dao/Course_classifyMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/classes/com/hkx/dao/Course_commentMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/classes/com/hkx/dao/Course_sectionMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/classes/com/hkx/dao/Site_carouselMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/classes/com/hkx/dao/UserInfoMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/classes/com/hkx/dao/User_collectionsMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/classes/com/hkx/dao/User_course_sectionMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/classes/com/hkx/dao/User_followsMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/classes/com/hkx/entity/Course.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/classes/com/hkx/entity/Course_classify.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/classes/com/hkx/entity/Course_comment.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/classes/com/hkx/entity/Course_section.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/classes/com/hkx/entity/Site_carousel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/classes/com/hkx/entity/UserInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/classes/com/hkx/entity/User_collections.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/classes/com/hkx/entity/User_course_section.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/classes/com/hkx/entity/User_follows.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/classes/com/hkx/service/LoginRegisterService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/classes/com/hkx/service/impl/LoginRegisterServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/classes/com/hkx/util/CodeUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/classes/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/classes/generatorConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/classes/mappers/CourseMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/classes/mappers/Course_classifyMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/classes/mappers/Course_commentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/classes/mappers/Course_sectionMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/classes/mappers/Site_carouselMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/classes/mappers/UserInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/classes/mappers/User_collectionsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/classes/mappers/User_course_sectionMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/classes/mappers/User_followsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/classes/mybaits-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/classes/springmvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/lib/aopalliance-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/lib/aspectjweaver-1.9.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/lib/c3p0-0.9.5.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/lib/classmate-1.3.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/lib/commons-fileupload-1.3.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/lib/commons-io-2.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/lib/hamcrest-core-1.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/lib/hibernate-validator-6.0.8.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/lib/jackson-annotations-2.9.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/lib/jackson-core-2.9.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/lib/jackson-databind-2.9.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/lib/jboss-logging-3.3.2.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/lib/jsqlparser-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/lib/jstl-1.1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/lib/junit-4.11.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/lib/log4j-1.2.17.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/lib/mchange-commons-java-0.2.11.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/lib/mybatis-3.4.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/lib/mybatis-generator-core-1.3.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/lib/mybatis-spring-1.3.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/lib/mysql-connector-java-5.1.38.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/lib/pagehelper-5.1.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/lib/spring-aop-5.0.8.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/lib/spring-aspects-5.0.8.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/lib/spring-beans-5.0.8.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/lib/spring-context-5.0.8.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/lib/spring-core-5.0.8.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/lib/spring-expression-5.0.8.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/lib/spring-jcl-5.0.8.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/lib/spring-jdbc-5.0.8.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/lib/spring-test-5.0.8.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/lib/spring-tx-5.0.8.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/lib/spring-web-5.0.8.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/lib/spring-webmvc-5.0.8.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/lib/standard-1.1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/lib/validation-api-2.0.1.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/app/403.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/app/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/app/500.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/app/collect.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/app/commentSegment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/app/course.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/app/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/app/header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/app/header2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/app/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/app/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/app/info.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/app/learn.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/app/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/app/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/app/nav.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/app/passwd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/app/qa.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/app/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/app/res.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/app/tailPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/app/tailPage2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/app/video.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/css/bootstrap.min3.3.7.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/css/bootstrapValidator.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/css/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/css/user.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/img/c1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/img/c2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/img/c3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/img/c4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/img/c5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/img/course.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/img/followed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/img/following.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/img/header.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/img/ico.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/img/main-bg-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/img/main-bg-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/img/main-bg-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/img/rebc.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/js/bootstrapValidator.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/js/drag.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/js/highcharts-4.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/js/jquery-1.11.3.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/js/jquery-1.7.2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/js/jquery.form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/js/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/papa_war_exploded/js/oc.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hkx/controller/CodeController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hkx/controller/LogingController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hkx/controller/UrlController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hkx/dao/CourseMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hkx/dao/Course_classifyMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hkx/dao/Course_commentMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hkx/dao/Course_sectionMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hkx/dao/Site_carouselMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hkx/dao/UserInfoMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hkx/dao/User_collectionsMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hkx/dao/User_course_sectionMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hkx/dao/User_followsMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hkx/entity/Course.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hkx/entity/Course_classify.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hkx/entity/Course_comment.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hkx/entity/Course_section.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hkx/entity/Site_carousel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hkx/entity/UserInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hkx/entity/User_collections.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hkx/entity/User_course_section.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hkx/entity/User_follows.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hkx/service/LoginRegisterService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hkx/service/impl/LoginRegisterServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hkx/util/CodeUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/generatorConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mappers/CourseMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mappers/Course_classifyMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mappers/Course_commentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mappers/Course_sectionMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mappers/Site_carouselMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mappers/UserInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mappers/User_collectionsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mappers/User_course_sectionMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mappers/User_followsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mybaits-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/springmvc.xml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="CourseMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/CourseMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="27" column="11" lean-forward="true" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CourseMapper.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hkx/dao/CourseMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Tag Library Descriptor" />
+        <option value="spring-beans.schema" />
+        <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/hkx/entity/Course_classify.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hkx/entity/Course_comment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hkx/entity/Course_section.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hkx/entity/Site_carousel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hkx/entity/User_collections.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hkx/entity/User_course_section.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hkx/entity/User_follows.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/c3p0-config.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybaits-config.xml" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/web/index.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hkx/service/impl/LoginRegisterService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hkx/util/CodeUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hkx/controller/CodeController.java" />
+        <option value="$PROJECT_DIR$/web/js/drag.js" />
+        <option value="$PROJECT_DIR$/web/css/user.css" />
+        <option value="$PROJECT_DIR$/web/app/index.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/db.properties" />
+        <option value="$PROJECT_DIR$/web/app/register.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hkx/service/impl/LoginRegisterServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hkx/dao/UserInfoMapper.java" />
+        <option value="$PROJECT_DIR$/web/app/login.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hkx/controller/UrlController.java" />
+        <option value="$PROJECT_DIR$/web/app/nav.html" />
+        <option value="$PROJECT_DIR$/web/app/passwd.html" />
+        <option value="$PROJECT_DIR$/web/css/reset.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/mappers/UserInfoMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hkx/entity/UserInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/springmvc.xml" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/web/app/header.html" />
+        <option value="$PROJECT_DIR$/web/app/info.html" />
+        <option value="$PROJECT_DIR$/web/app/home.html" />
+        <option value="$PROJECT_DIR$/web/app/course.html" />
+        <option value="$PROJECT_DIR$/web/app/collect.html" />
+        <option value="$PROJECT_DIR$/web/app/list.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hkx/service/CourseClassifyService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hkx/dao/Course_classifyMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mappers/Course_classifyMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hkx/controller/LogingController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hkx/controller/CourserClassifyController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hkx/service/LoginRegisterService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hkx/service/CourseService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hkx/service/impl/CourseClassifyServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hkx/service/impl/courseServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mappers/CourseMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hkx/dao/CourseMapper.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/apache-maven-3.5.4-bin/apache-maven-3.5.4" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="papa" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="papa" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="papa" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="mybatis-generator" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="845" />
+    <option name="width" value="1015" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <autoscrollFromSource ProjectPane="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="papa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="papa" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="papa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="papa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="papa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="papa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="papa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="papa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="papa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="papa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hkx" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="papa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="papa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hkx" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="papa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="papa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="papa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="papa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mappers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="papa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="papa" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="papa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="papa" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="papa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="papa" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.3908046" />
+    <property name="settings.editor.selected.configurable" value="spring" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\chuanxi\papa\web\app" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\chuanxi\papa\web\img" />
+      <recent name="F:\chuanxi\papa\web\css" />
+      <recent name="F:\chuanxi\papa\web\js" />
+      <recent name="F:\chuanxi\papa\web\app" />
+      <recent name="F:\chuanxi\papa\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.53" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="papa:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_papa" />
+        <option name="DEPLOY_TOMCAT_APPS" value="true" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="55546" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="papa:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="673083d9-37b4-4ecc-b24e-43bb6cecb963" name="Default" comment="" />
+      <created>1534153266191</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1534153266191</updated>
+      <workItem from="1534153273318" duration="8210000" />
+      <workItem from="1534206860526" duration="130000" />
+      <workItem from="1534207701803" duration="1296000" />
+      <workItem from="1534213412055" duration="17339000" />
+      <workItem from="1534294570196" duration="1639000" />
+      <workItem from="1534299122928" duration="3741000" />
+      <workItem from="1534317639532" duration="4766000" />
+      <workItem from="1534468015336" duration="2964000" />
+      <workItem from="1534673186294" duration="2421000" />
+      <workItem from="1534675989585" duration="12119000" />
+      <workItem from="1534724813329" duration="32409000" />
+    </task>
+    <task id="LOCAL-00001" summary="papa">
+      <created>1534299312065</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1534299312065</updated>
+    </task>
+    <task id="LOCAL-00002" summary="papa">
+      <created>1534768655817</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1534768655817</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="87034000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Application Servers" order="8" weight="0.32931727" />
+      <window_info anchor="right" id="Maven Projects" order="3" weight="0.3297587" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Database" order="3" weight="0.3297587" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32931727" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.40562248" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="bottom" id="Java Enterprise" order="7" weight="0.16867469" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32931727" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.08701473" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.32931727" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32797858" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2969169" />
+      <window_info anchor="right" id="Bean Validation" order="3" />
+      <window_info id="Web" order="2" side_tool="true" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="papa" />
+    <option name="LAST_COMMIT_MESSAGE" value="papa" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/web/app/commentSegment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="23" column="6" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/403.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-340" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hkx/util/CodeUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3420">
+          <caret line="96" column="56" selection-start-line="96" selection-start-column="49" selection-end-line="96" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hkx/controller/CodeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/qa.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1938">
+          <caret line="120" column="13" lean-forward="true" selection-start-line="120" selection-start-column="13" selection-end-line="120" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/drag.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1258">
+          <caret line="57" column="27" lean-forward="true" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/jquery-1.7.2.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-228" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/drag.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/user.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybaits-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/User_followsMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="3" column="23" lean-forward="true" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="27" column="58" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="109" column="29" lean-forward="true" selection-start-line="109" selection-start-column="29" selection-end-line="109" selection-end-column="29" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#li#4;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hkx/dao/UserInfoMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="22" column="67" selection-start-line="22" selection-start-column="67" selection-end-line="22" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hkx/controller/UrlController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="752">
+          <caret line="59" column="5" lean-forward="true" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#926#927#0" expanded="true" />
+            <element signature="e#950#951#0" expanded="true" />
+            <element signature="e#1022#1023#0" expanded="true" />
+            <element signature="e#1046#1047#0" expanded="true" />
+            <element signature="e#1112#1113#0" expanded="true" />
+            <element signature="e#1136#1137#0" expanded="true" />
+            <element signature="e#1198#1199#0" expanded="true" />
+            <element signature="e#1222#1223#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="13" column="20" lean-forward="true" selection-end-line="37" selection-end-column="9" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1596">
+          <caret line="75" column="28" selection-start-line="75" selection-start-column="28" selection-end-line="75" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/passwd.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="64" column="31" lean-forward="true" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/reset.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="548" column="19" selection-start-line="548" selection-start-column="19" selection-end-line="548" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hkx/entity/UserInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="148" column="18" selection-start-line="148" selection-start-column="18" selection-end-line="148" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-103">
+          <caret line="144" lean-forward="true" selection-start-line="144" selection-end-line="144" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/UserInfoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="13" column="65" lean-forward="true" selection-start-line="13" selection-start-column="65" selection-end-line="13" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-69">
+          <caret line="29" column="20" lean-forward="true" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/springmvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="23" column="57" lean-forward="true" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/papa_war_exploded/app/info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3990" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/papa_war_exploded/app/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="19" column="74" lean-forward="true" selection-start-line="19" selection-start-column="74" selection-end-line="19" selection-end-column="74" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#a#2;n#nav#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/collect.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="53" column="47" lean-forward="true" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#form#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="41" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#form#0;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#form#0;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="20" column="61" lean-forward="true" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/course.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="54" column="24" lean-forward="true" selection-start-line="54" selection-start-column="24" selection-end-line="65" selection-end-column="27" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hkx/service/CourseClassifyService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="17" column="50" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2304">
+          <caret line="38" column="40" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
+          <folding>
+            <element signature="n#style#0;n#nav#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#nav#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#2;n#nav#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hkx/dao/Course_classifyMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="19" column="49" lean-forward="true" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/Course_classifyMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="2" column="55" lean-forward="true" selection-start-line="2" selection-start-column="55" selection-end-line="2" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hkx/service/impl/LoginRegisterServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1139#1140#0" expanded="true" />
+            <element signature="e#1216#1217#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hkx/controller/LogingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-114">
+          <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hkx/controller/CourserClassifyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-100">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#808#809#0" expanded="true" />
+            <element signature="e#851#852#0" expanded="true" />
+            <element signature="e#991#992#0" expanded="true" />
+            <element signature="e#1034#1035#0" expanded="true" />
+            <element signature="e#1181#1182#0" expanded="true" />
+            <element signature="e#1250#1251#0" expanded="true" />
+            <element signature="e#1401#1402#0" expanded="true" />
+            <element signature="e#1467#1468#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hkx/service/LoginRegisterService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-380">
+          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hkx/service/impl/CourseClassifyServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="38" column="60" lean-forward="true" selection-start-line="38" selection-start-column="60" selection-end-line="38" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#418#419#0" expanded="true" />
+            <element signature="e#446#447#0" expanded="true" />
+            <element signature="e#595#596#0" expanded="true" />
+            <element signature="e#622#623#0" expanded="true" />
+            <element signature="e#682#683#0" expanded="true" />
+            <element signature="e#709#710#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/CourseMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="27" column="11" lean-forward="true" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hkx/service/impl/courseServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#302#303#0" expanded="true" />
+            <element signature="e#330#331#0" expanded="true" />
+            <element signature="e#367#368#0" expanded="true" />
+            <element signature="e#395#396#0" expanded="true" />
+            <element signature="e#439#440#0" expanded="true" />
+            <element signature="e#467#468#0" expanded="true" />
+            <element signature="e#506#507#0" expanded="true" />
+            <element signature="e#533#534#0" expanded="true" />
+            <element signature="e#571#572#0" expanded="true" />
+            <element signature="e#598#599#0" expanded="true" />
+            <element signature="e#662#663#0" expanded="true" />
+            <element signature="e#689#690#0" expanded="true" />
+            <element signature="e#759#760#0" expanded="true" />
+            <element signature="e#786#787#0" expanded="true" />
+            <element signature="e#838#839#0" expanded="true" />
+            <element signature="e#865#866#0" expanded="true" />
+            <element signature="e#925#926#0" expanded="true" />
+            <element signature="e#952#953#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hkx/service/CourseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="21" column="50" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="21" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hkx/dao/CourseMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>papa:war exploded</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3908046" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3908046" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3908046" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3908046" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>papa</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3908046" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3908046" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
