@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="utf-8">
+	<head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<title>个人主页</title>
+		<link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+		<link href="../css/reset.css" rel="stylesheet" type="text/css"/>
+		<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.form.js" ></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../js/oc.min.js" ></script>
+		<link rel="icon" type="image/png" href="../img/ico.png" />
+			<script>
+				$(function(){
+					$("#header").load("app/header.html");
+					$("#foot").load("app/footer.html");
+					$(".tailPage").load("app/tailPage2.html");
+				})
+			</script>
+	</head>
+
+	<body>
+		<div id="header"></div>
+		<div class="f-main clearfix">
+			<div class="setting-left">
+				<img id="userNavHeader" class="setting-header" src='../img/header.jpg'></img>
+				<div id="headname"></div>
+				<div class="split-line" style="margin-bottom: 20px;"></div>
+				<ul class="user-menu-nav-block">
+					<a href="/home">
+						<li id="home" class="user-menu-nav">主页 <span>&gt;</span></li>
+					</a>
+					<a href="/course">
+						<li class="user-menu-nav" >我的课程  <span>&gt;</span></li>
+					</a>
+					<a href="/collect">
+						<li class="user-menu-nav-cur">我的收藏  <span>&gt;</span></li>
+					</a>
+					<a href="/info">
+						<li class="user-menu-nav">个人信息  <span>&gt;</span></li>
+					</a>
+					<a href="/passwd">
+						<li class="user-menu-nav">修改密码  <span>&gt;</span></li>
+					</a>
+					<a href="qa.html">
+						<li class="user-menu-nav">答疑  <span>&gt;</span></li>
+					</a>
+				</ul>
+				<script type="text/javascript">
+                    $(function(){
+                        $.ajax({
+                            type:"post",
+                            url:"/user",
+                            dataType:"json",
+                            success:function (data) {
+                                var json = eval(data)
+                                if (json != null){
+                                    $("#headname").html(json.username);
+                                    $("#userNavHeader").attr("src",json.header);
+                                }
+                            }
+                        });
+                        $('.user-menu-nav').hover(function(){
+                            $(this).find('span').css('color','#0089D2');
+                        },function(){
+                            $(this).find('span').css('color','#777');
+                        });
+
+                        var headPhoto = $('#userNavHeader').attr('src');
+                        if(headPhoto == null || headPhoto == '' || headPhoto == 'null'){
+                            var headPhoto = "../img/header.jpg";
+                            $('#userNavHeader').attr('src',headPhoto);
+                        }
+                    });
+				</script>
+			</div>
+			
+			<div class="setting-right"  >
+				<div><span class="f-16">我的收藏</span></div>
+				<div class="split-line" style="margin: 20px 0px;"></div>
+				
+				<form id="queryPageForm" action="">
+				<!--<#if (page.items)??>
+				<#list page.items as item>-->
+				<div class="comment clearfix">
+					<div class="comment-main" style="width: 100%">
+						<a href="${s.base}/course/learn/${item.objectId!}.html" target="_blank" class="user-name link-a" style="font-size:20px;">
+						${item.name!}
+						</a>
+						<div class="comment-content">
+							<span class="learn-rate">分类：
+								<!--<#if item.classify??>
+									<#if item.classify == 1>课程</#if>
+								</#if>-->
+								课程
+							</span>
+							<span>收藏时间：
+							<!--<#if item.createTime??>-->
+							${item.createTime?string('yyyy-MM-dd')}
+							<!--</#if>-->
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="tailPage"></div>
+				</form>
+					
+			</div>
+		</div>
+		
+		<div id="foot"></div>
+	</body>
+	
+</html>

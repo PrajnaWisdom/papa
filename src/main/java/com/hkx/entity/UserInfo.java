@@ -2,9 +2,6 @@ package com.hkx.entity;
 
 import java.io.Serializable;
 
-/**
- * 用户表 学生和教师同属一张表
- */
 public class UserInfo implements Serializable {
     private Integer id;
 
@@ -15,6 +12,8 @@ public class UserInfo implements Serializable {
     private Boolean gender;
 
     private String header;
+
+    private String email;
 
     private String phone;
 
@@ -72,6 +71,14 @@ public class UserInfo implements Serializable {
 
     public void setHeader(String header) {
         this.header = header == null ? null : header.trim();
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email == null ? null : email.trim();
     }
 
     public String getPhone() {
@@ -136,5 +143,25 @@ public class UserInfo implements Serializable {
 
     public void setWeight(Integer weight) {
         this.weight = weight;
+    }
+
+    @Override
+    public String toString() {
+        return "UserInfo{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", gender=" + gender +
+                ", header='" + header + '\'' +
+                ", email='" + email + '\'' +
+                ", phone='" + phone + '\'' +
+                ", education='" + education + '\'' +
+                ", collegeName='" + collegeName + '\'' +
+                ", title='" + title + '\'' +
+                ", sign='" + sign + '\'' +
+                ", province='" + province + '\'' +
+                ", city='" + city + '\'' +
+                ", weight=" + weight +
+                '}';
     }
 }

@@ -7,6 +7,7 @@
     <result column="password" property="password" jdbcType="VARCHAR" />
     <result column="gender" property="gender" jdbcType="BIT" />
     <result column="header" property="header" jdbcType="VARCHAR" />
+    <result column="email" property="email" jdbcType="VARCHAR" />
     <result column="phone" property="phone" jdbcType="VARCHAR" />
     <result column="education" property="education" jdbcType="VARCHAR" />
     <result column="college_name" property="collegeName" jdbcType="VARCHAR" />
@@ -17,9 +18,23 @@
     <result column="weight" property="weight" jdbcType="INTEGER" />
   </resultMap>
   <sql id="Base_Column_List" >
-    id, username, password, gender, header, phone, education, college_name, title, sign, 
-    province, city, weight
+    id, username, password, gender, header, email, phone, education, college_name, title, 
+    sign, province, city, weight
   </sql>
+  <select id="getAllUsers" resultMap="BaseResultMap">
+    select <include refid="Base_Column_List"/> from t_user
+  </select>
+  <select id="verifylogin" resultMap="BaseResultMap">
+    select <include refid="Base_Column_List" />
+    from t_user
+    where username=#{username,jdbcType=VARCHAR} and password=#{password,jdbcType=VARCHAR}
+  </select>
+  <select id="verifyname" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from t_user
+    where username=#{username,jdbcType=VARCHAR}
+  </select>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
     select 
     <include refid="Base_Column_List" />
@@ -32,15 +47,15 @@
   </delete>
   <insert id="insert" parameterType="com.hkx.entity.UserInfo" >
     insert into t_user (id, username, password, 
-      gender, header, phone, 
-      education, college_name, title, 
-      sign, province, city, 
-      weight)
+      gender, header, email, 
+      phone, education, college_name, 
+      title, sign, province, 
+      city, weight)
     values (#{id,jdbcType=INTEGER}, #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
-      #{gender,jdbcType=BIT}, #{header,jdbcType=VARCHAR}, #{phone,jdbcType=VARCHAR}, 
-      #{education,jdbcType=VARCHAR}, #{collegeName,jdbcType=VARCHAR}, #{title,jdbcType=VARCHAR}, 
-      #{sign,jdbcType=VARCHAR}, #{province,jdbcType=VARCHAR}, #{city,jdbcType=VARCHAR}, 
-      #{weight,jdbcType=INTEGER})
+      #{gender,jdbcType=BIT}, #{header,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}, 
+      #{phone,jdbcType=VARCHAR}, #{education,jdbcType=VARCHAR}, #{collegeName,jdbcType=VARCHAR}, 
+      #{title,jdbcType=VARCHAR}, #{sign,jdbcType=VARCHAR}, #{province,jdbcType=VARCHAR}, 
+      #{city,jdbcType=VARCHAR}, #{weight,jdbcType=INTEGER})
   </insert>
   <insert id="insertSelective" parameterType="com.hkx.entity.UserInfo" >
     insert into t_user
@@ -59,6 +74,9 @@
       </if>
       <if test="header != null" >
         header,
+      </if>
+      <if test="email != null" >
+        email,
       </if>
       <if test="phone != null" >
         phone,
@@ -101,6 +119,9 @@
       <if test="header != null" >
         #{header,jdbcType=VARCHAR},
       </if>
+      <if test="email != null" >
+        #{email,jdbcType=VARCHAR},
+      </if>
       <if test="phone != null" >
         #{phone,jdbcType=VARCHAR},
       </if>
@@ -142,6 +163,9 @@
       <if test="header != null" >
         header = #{header,jdbcType=VARCHAR},
       </if>
+      <if test="email != null" >
+        email = #{email,jdbcType=VARCHAR},
+      </if>
       <if test="phone != null" >
         phone = #{phone,jdbcType=VARCHAR},
       </if>
@@ -175,6 +199,7 @@
       password = #{password,jdbcType=VARCHAR},
       gender = #{gender,jdbcType=BIT},
       header = #{header,jdbcType=VARCHAR},
+      email = #{email,jdbcType=VARCHAR},
       phone = #{phone,jdbcType=VARCHAR},
       education = #{education,jdbcType=VARCHAR},
       college_name = #{collegeName,jdbcType=VARCHAR},

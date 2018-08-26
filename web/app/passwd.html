@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="utf-8">
+	<head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<title>个人主页</title>
+		<link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+		<link href="../css/reset.css" rel="stylesheet" type="text/css"/>
+		<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.form.js" ></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../js/oc.min.js" ></script>
+		<link rel="icon" type="image/png" href="../img/ico.png" />
+			<script>
+				$(function(){
+					$("#header").load("app/header.html");
+					$("#foot").load("app/footer.html");
+				})
+			</script>
+	</head>
+
+	<body>
+		<div id="header"></div>
+		<div class="f-main clearfix">
+			<div class="setting-left">
+				<img id="userNavHeader" class="setting-header" />
+				<div id="username"></div>
+				<div class="split-line" style="margin-bottom: 20px;"></div>
+				<ul class="user-menu-nav-block">
+					<a href="/home">
+						<li id="home" class="user-menu-nav">主页 <span>&gt;</span></li>
+					</a>
+					<a href="/course">
+						<li class="user-menu-nav" >我的课程  <span>&gt;</span></li>
+					</a>
+					<a href="/collect">
+						<li class="user-menu-nav">我的收藏  <span>&gt;</span></li>
+					</a>
+					<a href="/info">
+						<li class="user-menu-nav">个人信息  <span>&gt;</span></li>
+					</a>
+					<a href="/passwd">
+						<li class="user-menu-nav-cur">修改密码  <span>&gt;</span></li>
+					</a>
+					<a href="qa.html">
+						<li class="user-menu-nav">答疑  <span>&gt;</span></li>
+					</a>
+				</ul>
+				<script type="text/javascript">
+                    $(function(){
+                            $.ajax({
+                                type:"post",
+                                url:"/user",
+                                dataType:"json",
+                                success:function (data) {
+                                    var json = eval(data)
+                                    if (json != null){
+                                        $("#username").html(json.username);
+                                        $("#userNavHeader").attr("src",json.header)
+                                    }
+                                }
+                            });
+                        $('.user-menu-nav').hover(function(){
+                            $(this).find('span').css('color','#0089D2');
+                        },function(){
+                            $(this).find('span').css('color','#777');
+                        });
+
+                        var headPhoto = $('#userNavHeader').attr('src');
+                        if(headPhoto == null || headPhoto == '' || headPhoto == 'null'){
+                            var headPhoto = "../img/header.jpg";
+                            $('#userNavHeader').attr('src',headPhoto);
+                        }
+                    });
+				</script>
+			</div>
+			<div class="setting-right"  >
+				<div>
+					<span class="f-16">修改密码</span>
+				</div>
+				<div class="split-line" style="margin: 20px 0px;"></div>
+				
+				<form class="oc-form" id="passwdForm" method="post" action="/updatepwd">
+					<li><label>旧密码</label> <input id="oldPassword" name="oldPwd" type="password" class="input-text" placeholder="请输入旧密码" autocomplete="off" /></li>
+					<li><label>新密码</label> <input name="newPwd" type="password" class="input-text"  placeholder="请输入新密码" autocomplete="off" /></li>
+					<li><label>确认密码</label> <input name="rePassword" type="password" class="input-text"  placeholder="请输入确认密码" autocomplete="off" /></li>
+					<li class="clearfix" style="margin-top: 50px;padding-left: 170px;">
+						<div class="btn" onclick="passwdSubmit()">保存</div>
+					</li>
+					<li>
+						<div id="infoAlert" class="alert alert-success" style="display: none;">
+							<span id="infoAlert_msg" class="color-oc f-16"></span>
+						</div>
+					</li>
+				</form>
+			</div>
+		</div>
+		
+		<div id="foot"></div>
+		
+		<script type="text/javascript">
+			function passwdSubmit() {
+				$('#passwdForm').ajaxSubmit({
+					datatype : 'json',
+					success : function(resp) {
+						var resp = $.parseJSON(resp);
+						if (resp == 1) {
+							$('#infoAlert_msg').html('修改密码成功！');
+						} else if(resp == -1) {
+							$('#infoAlert_msg').html("旧密码错误!");
+						}else {
+						    $('#infoAlert_msg').html("修改密码失败");
+						}
+						$("#infoAlert").show().fadeOut(2500);//显示模态框
+					},
+					error : function(xhr) {
+					}
+				});
+			}
+		</script>	
+	</body>
+</html>
+

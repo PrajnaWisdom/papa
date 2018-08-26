@@ -5,6 +5,9 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
 		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
+    <context:component-scan base-package="com.hkx.service.impl">
+        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>
     <context:property-placeholder location="classpath:db.properties" />
     <bean id="source" class="com.mchange.v2.c3p0.ComboPooledDataSource">
         <property name="driverClass" value="${jdbc.driver}"></property>
@@ -15,10 +18,14 @@
         <property name="minPoolSize" value="${jdbc.minPoolSize}"></property>
         <property name="initialPoolSize" value="${jdbc.initalSize}"></property>
     </bean>
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="source"/>
+    </bean>
+    <tx:annotation-driven/>
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="source"></property>
         <property name="configLocation" value="classpath:mybaits-config.xml"></property>
-        <property name="mapperLocations" value="classpath:mappers/*.xml"></property>
+        <property name="mapperLocations" value="classpath*:mappers/*.xml"></property>
     </bean>
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="com.hkx.dao"></property>
